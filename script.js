@@ -1,18 +1,10 @@
-// #1
+// #2,1
 
-let count = 4;
-let ask = prompt('Введіть пароль!');
-if (ask === '1111') {
-    alert(`Запрошуємо на сайт!`)
+let n = +prompt('write number');
+let result = 1;
+let i = 0;
+while (i < n) {
+    result = result * (n-i);
+    i++
 }
-else {
-    while (count != 0) {
-    ask = prompt(`Залишилось ${count} спроби`)
-    count -= 1;
-    }
-    if (count == 0) {
-        alert(`Будь ласка, спробуйте пізніше!`)
-    }
-}
-
-
+console.log(n + '! = ' + result)
